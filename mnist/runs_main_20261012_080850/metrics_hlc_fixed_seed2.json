@@ -1,0 +1,72 @@
+{
+  "condition": "hlc_fixed",
+  "seed": 2,
+  "params": 10000000,
+  "test_acc": 0.9748,
+  "test_f1": 0.9746111035346985,
+  "test_nll": 0.10373026695251465,
+  "val_acc": 0.9733,
+  "val_f1": 0.9729794263839722,
+  "final_train_acc": 0.9918,
+  "grad_evals": 3000,
+  "probe_grad_evals": 0,
+  "examples_seen": 384000,
+  "wall_s": 78.07183837890625,
+  "peak_mem_mb": 1507.6796875,
+  "retention": 0.994,
+  "forgetting": 0.006000000000000005,
+  "stage_log": [
+    {
+      "stage": "BIRTH",
+      "step": 0,
+      "grad_evals": 0,
+      "examples_seen": 0,
+      "train_loss": NaN,
+      "train_err": NaN,
+      "retention": 0.077,
+      "note": "fixed schedule budget=375"
+    },
+    {
+      "stage": "GROWTH",
+      "step": 375,
+      "grad_evals": 375,
+      "examples_seen": 48000,
+      "train_loss": 8.63248309087794e-06,
+      "train_err": 0.0,
+      "retention": 0.514,
+      "note": "fixed schedule budget=625"
+    },
+    {
+      "stage": "EXPLORATION",
+      "step": 1000,
+      "grad_evals": 1000,
+      "examples_seen": 128000,
+      "train_loss": 0.1239584930613637,
+      "train_err": 0.03125,
+      "retention": 0.9745,
+      "note": "fixed schedule budget=750"
+    },
+    {
+      "stage": "REFLECTION",
+      "step": 1750,
+      "grad_evals": 1750,
+      "examples_seen": 224000,
+      "train_loss": 0.03995758791454136,
+      "train_err": 0.01203125,
+      "retention": 0.9895,
+      "note": "fixed schedule budget=625"
+    },
+    {
+      "stage": "CONSOLIDATION",
+      "step": 2375,
+      "grad_evals": 2375,
+      "examples_seen": 304000,
+      "train_loss": 0.02297978746937588,
+      "train_err": 0.00703125,
+      "retention": 0.99,
+      "note": "fixed schedule budget=625"
+    }
+  ],
+  "generations": [],
+  "extra": {}
+}

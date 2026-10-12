@@ -1,0 +1,25 @@
+{
+  "mode": "main",
+  "timestamp_utc": "20261012_080850",
+  "budget_steps": 3000,
+  "generations": 3,
+  "batch_size": 128,
+  "val_size": 10000,
+  "threads": 8,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "adamw",
+    "hlc_fixed",
+    "hlc_adaptive",
+    "sihlc"
+  ],
+  "target_params": 10000000,
+  "torch": "2.14.1+cpu",
+  "numpy": "2.5.2"
+}

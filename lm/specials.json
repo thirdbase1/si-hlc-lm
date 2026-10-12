@@ -1,0 +1,8 @@
+{
+  "doc_sep": "<|doc|>",
+  "pad": "<|pad|>",
+  "user_tag": "User:",
+  "bot_tag": "Bot:",
+  "doc_sep_id": 0,
+  "pad_id": 1
+}

@@ -1,0 +1,207 @@
+{
+  "checkpoint": "/home/boxd/hlc/lmruns/main_20261012_113306/ckpt_sihlc_seed1.pt",
+  "condition": "sihlc",
+  "seed": 1,
+  "params": 10000000,
+  "config": {
+    "vocab": 7618,
+    "d": 320,
+    "n_layers": 6,
+    "ffn": 1280,
+    "n_heads": 5,
+    "pos_max": 512,
+    "tie": true
+  },
+  "train_loss": 5.823378403924899,
+  "train_ppl": 338.1124065403816,
+  "val_loss": 5.826053832459382,
+  "val_ppl": 339.0182132910088,
+  "test_loss": 5.9144526315233446,
+  "test_ppl": 370.3515284613236,
+  "generation": {
+    "samples": [
+      {
+        "prompt": "User: Hello , how are you today ?\nBot:",
+        "response": " I see for you .\n"
+      },
+      {
+        "prompt": "User: What is your name ?\nBot:",
+        "response": " I'll be for \u2019 s all .\n"
+      },
+      {
+        "prompt": "User: Can you help me with something ?\nBot:",
+        "response": " .\nUser: Are you ? I just have a good at !User: Sure , so . It's the one to drink . But this is then you like out that. got for it ?\n"
+      },
+      {
+        "prompt": "User: I am feeling a bit sad today .\nBot:",
+        "response": " I can't you think it ?\n"
+      },
+      {
+        "prompt": "User: What do you like to do for fun ?\nBot:",
+        "response": " .\nUser: I see that ?User: What do for a big with some you like to get them , we have your time in the take . Let me my government of are ! We don't one and's what will be"
+      },
+      {
+        "prompt": "User: Thank you so much for your help .\nBot:",
+        "response": " I've . It's a there will be you ?\n"
+      }
+    ],
+    "distinct_1": 0.9763271162123385,
+    "distinct_2": 1.0,
+    "repetition_rate_3gram": 0.0
+  },
+  "qa": {
+    "n": 60,
+    "token_f1_mean": 0.08889658522716472,
+    "exact_match": 0.0,
+    "examples": [
+      {
+        "question": " Yeah ? ",
+        "gold": " I want you to put your hands behind your head ! You are under arrest ! ",
+        "prediction": " I'll do for you are I don't to have ?\n",
+        "token_f1": 0.32
+      },
+      {
+        "question": " Do you know there are several catagories of Chinese tea ? ",
+        "gold": " Yes , I believe there are green teas , black teas and scented teas . Any Others ? ",
+        "prediction": " It's the When be , and to do you are !User: Thank ?\n",
+        "token_f1": 0.15384615384615383
+      },
+      {
+        "question": "What are your personal weaknesses ? ",
+        "gold": " I \u2019 m afraid I \u2019 m a poor talker . I \u2019 m not comfortable talking with the people whom I have just met for the first time . That is not very good for business , so I have been studying public speaking . ",
+        "prediction": " I know it .\n",
+        "token_f1": 0.047619047619047616
+      },
+      {
+        "question": "how long will it take us to drive to London ? ",
+        "gold": " I think it \u2019 s a distance of 180 kilometers from here to London , so it should be a two-hour drive on the motorway . ",
+        "prediction": " I'll are you .\n",
+        "token_f1": 0.07142857142857142
+      },
+      {
+        "question": "So how did I do on my driving test ? ",
+        "gold": " Do you want the truth ? ",
+        "prediction": " They are you .\n",
+        "token_f1": 0.25
+      },
+      {
+        "question": "Good morning . What's the matter with you ? ",
+        "gold": " Good morning , doctor . I have a terrible headache . ",
+        "prediction": " I'm afraid a lot of it .\n",
+        "token_f1": 0.26666666666666666
+      },
+      {
+        "question": "My dear , what's for supper ? ",
+        "gold": " Red cooked carp and rape with fresh mushrooms . ",
+        "prediction": " Yeah , I have to go .\n",
+        "token_f1": 0.0
+      },
+      {
+        "question": " Everything is fine , and how are you ? ",
+        "gold": " Things are going well with me . ",
+        "prediction": " I am not ?\n",
+        "token_f1": 0.0
+      }
+    ]
+  },
+  "multiturn": [
+    {
+      "seed_dialogue": [
+        "Hey man , you wanna buy some weed ? ",
+        " Some what ? "
+      ],
+      "generated": [
+        "I'll do is a lot .",
+        "I need a big ?",
+        "I can't be ."
+      ]
+    },
+    {
+      "seed_dialogue": [
+        "The taxi drivers are on strike again . ",
+        " What for ? "
+      ],
+      "generated": [
+        "I'd like to be of the one is a lot . It's your work in this \u2019 m mind that , please ?",
+        "How are you like to me .",
+        "I have to be there .User: Oh , it \u2019 s a good idea . You can do you want me ?"
+      ]
+    },
+    {
+      "seed_dialogue": [
+        "We've managed to reduce our energy consumption in our factory by about 15 per cent in the last two years . ",
+        " That's excellent . How have you managed that ? "
+      ],
+      "generated": [
+        "It's right . I was a job and his on the from in your name ?",
+        "Sure .",
+        "I've been .User: What do for a little is ?"
+      ]
+    },
+    {
+      "seed_dialogue": [
+        "Believe it or not , tea is the most popular beverage in the world after water . ",
+        " Well , people from Asia to Europe all enjoy tea . "
+      ],
+      "generated": [
+        "What do we can't think it's going to take .User: Thank you have a little with the time is that in your job .",
+        "Are you ?",
+        "It's a little is the most , but I'm just ?"
+      ]
+    },
+    {
+      "seed_dialogue": [
+        "What are your personal weaknesses ? ",
+        " I \u2019 m afraid I \u2019 m a poor talker . I \u2019 m not comfortable talking with the people whom I have just met for the first time . That is not very good for business , so I have been studying public speaking . "
+      ],
+      "generated": [
+        "It's your .",
+        "Well , you want ?",
+        "Yes , you are in the a little \u2019 s really . I've been on it ?"
+      ]
+    },
+    {
+      "seed_dialogue": [
+        "how long will it take us to drive to London ? ",
+        " I think it \u2019 s a distance of 180 kilometers from here to London , so it should be a two-hour drive on the motorway . "
+      ],
+      "generated": [
+        "I have .",
+        "Yes , please . I'll get ?",
+        "I think that ?"
+      ]
+    }
+  ],
+  "memorisation": {
+    "n": 27,
+    "token_f1_mean": 0.08880096583800287,
+    "exact_fraction": 0.0,
+    "examples": [
+      {
+        "gold_continuation": "I suggest a walk over to the gym where we can play singsong and meet some of our friends .",
+        "predicted": "Yes , I'll be a little .",
+        "token_f1": 0.16
+      },
+      {
+        "gold_continuation": "You mean 30 push-ups ?",
+        "predicted": "I'm going to be .",
+        "token_f1": 0.0
+      },
+      {
+        "gold_continuation": "What is the difference ?",
+        "predicted": "I have the same same same , I have your night , I'm just see .",
+        "token_f1": 0.11111111111111112
+      },
+      {
+        "gold_continuation": "Don't worry.He is an acrobat \u3002",
+        "predicted": "I'm sorry .",
+        "token_f1": 0.0
+      },
+      {
+        "gold_continuation": "Yeah , you \u2019 re a pretty big guy . I play goalie , myself .",
+        "predicted": "I think it .",
+        "token_f1": 0.14285714285714288
+      }
+    ]
+  }
+}

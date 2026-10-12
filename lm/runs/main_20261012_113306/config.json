@@ -1,0 +1,51 @@
+{
+  "mode": "main",
+  "timestamp_utc": "20261012_113306",
+  "steps": 600,
+  "generations": 3,
+  "batch_size": 16,
+  "seq_len": 256,
+  "tokens_per_step": 4096,
+  "token_budget": 2457600,
+  "threads": 8,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "adamw",
+    "hlc_fixed",
+    "hlc_adaptive",
+    "sihlc"
+  ],
+  "vocab": 7618,
+  "dataset": "DailyDialog (Li et al., IJCNLP 2017)",
+  "license": "CC-BY-NC-SA-4.0 (non-commercial research use)",
+  "torch": "2.14.1+cpu",
+  "splits": {
+    "train": {
+      "dialogues": 11118,
+      "blocks": 6109,
+      "tokens_packed": 1563904,
+      "tokens_dropped": 174,
+      "md5_blocks": "ad0d5eb7b5bb86961fc653e4681edbe3"
+    },
+    "validation": {
+      "dialogues": 1000,
+      "blocks": 563,
+      "tokens_packed": 144128,
+      "tokens_dropped": 213,
+      "md5_blocks": "b48b6d9934d2c79eebc5acafe7f67406"
+    },
+    "test": {
+      "dialogues": 1000,
+      "blocks": 551,
+      "tokens_packed": 141056,
+      "tokens_dropped": 17,
+      "md5_blocks": "1d1ceee04168100fcb858cca768886ce"
+    }
+  }
+}

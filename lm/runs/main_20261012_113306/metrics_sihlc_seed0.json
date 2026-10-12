@@ -1,0 +1,463 @@
+{
+  "condition": "sihlc",
+  "seed": 0,
+  "params": 10000000,
+  "config": {
+    "vocab": 7618,
+    "d": 320,
+    "n_layers": 6,
+    "ffn": 1280,
+    "n_heads": 5,
+    "pos_max": 512,
+    "tie": true
+  },
+  "test_loss": 6.622600904160439,
+  "test_ppl": 751.8981712133428,
+  "val_loss": 6.558808295812219,
+  "val_ppl": 705.4305289690544,
+  "train_loss_final": 6.488625888824463,
+  "retention_ppl": 626.3992207596713,
+  "retention_loss": 6.439987900677849,
+  "steps": 600,
+  "probe_steps": 261,
+  "probe_tokens": 1069056,
+  "tokens_seen": 2457600,
+  "wall_s": 700.733728647232,
+  "peak_mem_mb": 1698.12109375,
+  "stage_log": [
+    {
+      "stage": "BIRTH",
+      "step": 0,
+      "tokens": 0,
+      "train_loss": NaN,
+      "retention_loss": 206.68238740808823,
+      "note": "gen=0 want=27"
+    },
+    {
+      "stage": "GROWTH",
+      "step": 27,
+      "tokens": 110592,
+      "train_loss": 120.28193791707356,
+      "retention_loss": 36.293009440104164,
+      "note": "gen=0 want=42"
+    },
+    {
+      "stage": "EXPLORATION",
+      "step": 69,
+      "tokens": 282624,
+      "train_loss": 20.502096112569173,
+      "retention_loss": 17.242513020833332,
+      "note": "gen=0 want=47"
+    },
+    {
+      "stage": "REFLECTION",
+      "step": 116,
+      "tokens": 475136,
+      "train_loss": 14.32863744099935,
+      "retention_loss": 13.08397456150429,
+      "note": "gen=0 want=42"
+    },
+    {
+      "stage": "CONSOLIDATION",
+      "step": 158,
+      "tokens": 647168,
+      "train_loss": 11.771454493204752,
+      "retention_loss": 10.991375014361214,
+      "note": "gen=0 want=42"
+    },
+    {
+      "stage": "RENEWAL",
+      "step": 200,
+      "tokens": 819200,
+      "train_loss": 10.151787853240966,
+      "retention_loss": 9.54165709252451,
+      "note": "gen=0 stagnation=0.18015 retention_loss=9.5417"
+    },
+    {
+      "stage": "BIRTH",
+      "step": 200,
+      "tokens": 819200,
+      "train_loss": 10.151787853240966,
+      "retention_loss": 9.54165709252451,
+      "note": "gen=1 want=26"
+    },
+    {
+      "stage": "GROWTH",
+      "step": 226,
+      "tokens": 925696,
+      "train_loss": 8.72423300743103,
+      "retention_loss": 8.782815731272978,
+      "note": "gen=1 want=39"
+    },
+    {
+      "stage": "EXPLORATION",
+      "step": 265,
+      "tokens": 1085440,
+      "train_loss": 7.961467981338501,
+      "retention_loss": 7.987443213369332,
+      "note": "gen=1 want=35"
+    },
+    {
+      "stage": "REFLECTION",
+      "step": 300,
+      "tokens": 1228800,
+      "train_loss": 7.726122331619263,
+      "retention_loss": 7.429121369006587,
+      "note": "gen=1 want=50"
+    },
+    {
+      "stage": "CONSOLIDATION",
+      "step": 350,
+      "tokens": 1433600,
+      "train_loss": 7.0334999561309814,
+      "retention_loss": 6.9700063069661455,
+      "note": "gen=1 want=50"
+    },
+    {
+      "stage": "RENEWAL",
+      "step": 400,
+      "tokens": 1638400,
+      "train_loss": 6.754263210296631,
+      "retention_loss": 6.662641457950367,
+      "note": "gen=1 stagnation=0.04378 retention_loss=6.6626"
+    },
+    {
+      "stage": "BIRTH",
+      "step": 400,
+      "tokens": 1638400,
+      "train_loss": 6.754263210296631,
+      "retention_loss": 6.662641457950367,
+      "note": "gen=2 want=26"
+    },
+    {
+      "stage": "GROWTH",
+      "step": 426,
+      "tokens": 1744896,
+      "train_loss": 6.292712148030599,
+      "retention_loss": 6.595628087660845,
+      "note": "gen=2 want=53"
+    },
+    {
+      "stage": "EXPLORATION",
+      "step": 479,
+      "tokens": 1961984,
+      "train_loss": 6.143283335367839,
+      "retention_loss": 6.5023235246246935,
+      "note": "gen=2 want=34"
+    },
+    {
+      "stage": "REFLECTION",
+      "step": 500,
+      "tokens": 2048000,
+      "train_loss": 6.373295497894287,
+      "retention_loss": 6.474280622893689,
+      "note": "gen=2 want=69"
+    },
+    {
+      "stage": "CONSOLIDATION",
+      "step": 569,
+      "tokens": 2330624,
+      "train_loss": 6.420724964141845,
+      "retention_loss": 6.442602778416054,
+      "note": "gen=2 want=31"
+    },
+    {
+      "stage": "RENEWAL",
+      "step": 600,
+      "tokens": 2457600,
+      "train_loss": 6.516457335154215,
+      "retention_loss": 6.439987900677849,
+      "note": "gen=2 stagnation=0.00508 retention_loss=6.4400"
+    }
+  ],
+  "generations": [
+    {
+      "generation": 0,
+      "step": 200,
+      "incumbent_val_loss": 9.707289479748939,
+      "incumbent_val_ppl": 16436.988650952564,
+      "candidates": [
+        {
+          "candidate": 0,
+          "policy": {
+            "birth_to_growth_loss": 6.8013157121072,
+            "growth_to_expl_loss": 4.5856160847749665,
+            "expl_to_refl_progress": 0.0008378315377664449,
+            "refl_to_cons_retention": 4.419833162634235,
+            "cons_to_renew_stag": 0.03228019337665068,
+            "d_birth": 171,
+            "d_growth": 206,
+            "d_exploration": 251,
+            "d_reflection": 196,
+            "d_consolidation": 259,
+            "d_renewal": 0,
+            "p_hard": 0.588438995154029,
+            "p_uncertain": 0.3607667800476415,
+            "p_missed": 0.7929251119127679,
+            "p_replay": 0.16007567259163927,
+            "birth_easy_frac": 0.29133798035738995,
+            "growth_easy_frac": 0.2351311241205118,
+            "lr": 0.0005384305150574488,
+            "warmup_frac": 0.06560959151868188,
+            "min_stage_steps": 20
+          },
+          "val_loss": 8.977794703999495,
+          "val_ppl": 7925.135560297448,
+          "probe_steps": 30
+        },
+        {
+          "candidate": 1,
+          "policy": {
+            "birth_to_growth_loss": 6.059366159182247,
+            "growth_to_expl_loss": 4.8608369981557855,
+            "expl_to_refl_progress": 0.0005852606360634404,
+            "refl_to_cons_retention": 4.549139931799477,
+            "cons_to_renew_stag": 0.02668847705599031,
+            "d_birth": 142,
+            "d_growth": 208,
+            "d_exploration": 189,
+            "d_reflection": 270,
+            "d_consolidation": 267,
+            "d_renewal": 0,
+            "p_hard": 0.5519517556545945,
+            "p_uncertain": 0.5421285973549885,
+            "p_missed": 0.7489961499484443,
+            "p_replay": 0.26667642719373114,
+            "birth_easy_frac": 0.184317370904034,
+            "growth_easy_frac": 0.34429766803881634,
+            "lr": 0.0003864094451140766,
+            "warmup_frac": 0.04826814066692168,
+            "min_stage_steps": 20
+          },
+          "val_loss": 8.963966659946061,
+          "val_ppl": 7816.3006577849765,
+          "probe_steps": 30
+        },
+        {
+          "candidate": 2,
+          "policy": {
+            "birth_to_growth_loss": 6.468837789429936,
+            "growth_to_expl_loss": 5.701078101828201,
+            "expl_to_refl_progress": 0.018663508578486743,
+            "refl_to_cons_retention": 4.829354236050884,
+            "cons_to_renew_stag": 0.02280396936460663,
+            "d_birth": 107,
+            "d_growth": 204,
+            "d_exploration": 181,
+            "d_reflection": 171,
+            "d_consolidation": 252,
+            "d_renewal": 0,
+            "p_hard": 0.42360412618934634,
+            "p_uncertain": 0.5344924005120919,
+            "p_missed": 0.59184398933142,
+            "p_replay": 0.39979324429601937,
+            "birth_easy_frac": 0.301677695347963,
+            "growth_easy_frac": 0.24787388859859041,
+            "lr": 0.0005444179038648166,
+            "warmup_frac": 0.029392602610389576,
+            "min_stage_steps": 20
+          },
+          "val_loss": 8.970101623992182,
+          "val_ppl": 7864.400776679109,
+          "probe_steps": 30
+        }
+      ],
+      "accepted": true,
+      "selected": "candidate",
+      "selected_val_loss": 8.963966659946061
+    },
+    {
+      "generation": 1,
+      "step": 400,
+      "incumbent_val_loss": 6.775667122144151,
+      "incumbent_val_ppl": 876.2637430334478,
+      "candidates": [
+        {
+          "candidate": 0,
+          "policy": {
+            "birth_to_growth_loss": 6.085373733522811,
+            "growth_to_expl_loss": 5.671671651542469,
+            "expl_to_refl_progress": 0.0001,
+            "refl_to_cons_retention": 5.0875192683641695,
+            "cons_to_renew_stag": 0.01931226997480134,
+            "d_birth": 139,
+            "d_growth": 280,
+            "d_exploration": 183,
+            "d_reflection": 296,
+            "d_consolidation": 167,
+            "d_renewal": 0,
+            "p_hard": 0.6229354260835404,
+            "p_uncertain": 0.5528087250563865,
+            "p_missed": 0.7047263962382083,
+            "p_replay": 0.35320503822225247,
+            "birth_easy_frac": 0.14889244017653008,
+            "growth_easy_frac": 0.3349972459349466,
+            "lr": 0.0002708971893401773,
+            "warmup_frac": 0.05332034183520022,
+            "min_stage_steps": 20
+          },
+          "val_loss": 6.653619535902727,
+          "val_ppl": 775.5865143987892,
+          "probe_steps": 30
+        },
+        {
+          "candidate": 1,
+          "policy": {
+            "birth_to_growth_loss": 5.406967688669776,
+            "growth_to_expl_loss": 4.433001010951115,
+            "expl_to_refl_progress": 0.00558253950175929,
+            "refl_to_cons_retention": 4.285630441382724,
+            "cons_to_renew_stag": 0.026107963253710405,
+            "d_birth": 211,
+            "d_growth": 305,
+            "d_exploration": 237,
+            "d_reflection": 294,
+            "d_consolidation": 227,
+            "d_renewal": 0,
+            "p_hard": 0.4569343181116301,
+            "p_uncertain": 0.6737077130555056,
+            "p_missed": 0.7531739821908928,
+            "p_replay": 0.15143611093496223,
+            "birth_easy_frac": 0.20654552690078407,
+            "growth_easy_frac": 0.399634290907276,
+            "lr": 0.0005485101206765423,
+            "warmup_frac": 0.09054845230589838,
+            "min_stage_steps": 20
+          },
+          "val_loss": 6.658115036089924,
+          "val_ppl": 779.0810125929238,
+          "probe_steps": 30
+        },
+        {
+          "candidate": 2,
+          "policy": {
+            "birth_to_growth_loss": 5.046470487843493,
+            "growth_to_expl_loss": 4.912297672023825,
+            "expl_to_refl_progress": 0.0001,
+            "refl_to_cons_retention": 4.023959426779328,
+            "cons_to_renew_stag": 0.03222854128625381,
+            "d_birth": 194,
+            "d_growth": 236,
+            "d_exploration": 158,
+            "d_reflection": 366,
+            "d_consolidation": 283,
+            "d_renewal": 0,
+            "p_hard": 0.5550006433052238,
+            "p_uncertain": 0.6129770555115983,
+            "p_missed": 0.657455879252533,
+            "p_replay": 0.3625644429295143,
+            "birth_easy_frac": 0.21730901398462027,
+            "growth_easy_frac": 0.40171705634977656,
+            "lr": 0.00030426822104124673,
+            "warmup_frac": 0.082227009627068,
+            "min_stage_steps": 20
+          },
+          "val_loss": 6.657459273673946,
+          "val_ppl": 778.5702880211545,
+          "probe_steps": 30
+        }
+      ],
+      "accepted": true,
+      "selected": "candidate",
+      "selected_val_loss": 6.653619535902727
+    },
+    {
+      "generation": 2,
+      "step": 600,
+      "incumbent_val_loss": 6.558808295812219,
+      "incumbent_val_ppl": 705.4305289690544,
+      "candidates": [
+        {
+          "candidate": 0,
+          "policy": {
+            "birth_to_growth_loss": 5.560920428871307,
+            "growth_to_expl_loss": 5.308955709687891,
+            "expl_to_refl_progress": 0.006371945782261835,
+            "refl_to_cons_retention": 4.597818398926286,
+            "cons_to_renew_stag": 0.023236210592654977,
+            "d_birth": 175,
+            "d_growth": 215,
+            "d_exploration": 119,
+            "d_reflection": 251,
+            "d_consolidation": 199,
+            "d_renewal": 0,
+            "p_hard": 0.6403698116620602,
+            "p_uncertain": 0.4548261587818806,
+            "p_missed": 0.687210401847453,
+            "p_replay": 0.4039942277946086,
+            "birth_easy_frac": 0.1349936813651531,
+            "growth_easy_frac": 0.3616341257897699,
+            "lr": 0.00052856211526585,
+            "warmup_frac": 0.0812920456493244,
+            "min_stage_steps": 20
+          },
+          "val_loss": 6.558808295812219,
+          "val_ppl": 705.4305289690544,
+          "probe_steps": 27
+        },
+        {
+          "candidate": 1,
+          "policy": {
+            "birth_to_growth_loss": 5.846948366298869,
+            "growth_to_expl_loss": 5.108726277038645,
+            "expl_to_refl_progress": 0.0001,
+            "refl_to_cons_retention": 5.100798436647662,
+            "cons_to_renew_stag": 0.03464767882722405,
+            "d_birth": 180,
+            "d_growth": 248,
+            "d_exploration": 262,
+            "d_reflection": 303,
+            "d_consolidation": 204,
+            "d_renewal": 0,
+            "p_hard": 0.512953472450545,
+            "p_uncertain": 0.4420809214176101,
+            "p_missed": 0.6272223325958655,
+            "p_replay": 0.4685399403287405,
+            "birth_easy_frac": 0.18125850324375514,
+            "growth_easy_frac": 0.40484451065783356,
+            "lr": 0.00039731255572505547,
+            "warmup_frac": 0.05917564033944238,
+            "min_stage_steps": 20
+          },
+          "val_loss": 6.558808295812219,
+          "val_ppl": 705.4305289690544,
+          "probe_steps": 27
+        },
+        {
+          "candidate": 2,
+          "policy": {
+            "birth_to_growth_loss": 6.121845760597804,
+            "growth_to_expl_loss": 5.8398699835031,
+            "expl_to_refl_progress": 0.007327874978756257,
+            "refl_to_cons_retention": 5.013342667755119,
+            "cons_to_renew_stag": 0.03468808228549375,
+            "d_birth": 160,
+            "d_growth": 377,
+            "d_exploration": 192,
+            "d_reflection": 362,
+            "d_consolidation": 151,
+            "d_renewal": 0,
+            "p_hard": 0.6293274071821943,
+            "p_uncertain": 0.4733512745417105,
+            "p_missed": 0.6009093327630123,
+            "p_replay": 0.2147862771985431,
+            "birth_easy_frac": 0.18524334592600822,
+            "growth_easy_frac": 0.32628337011125785,
+            "lr": 0.0005002390805034525,
+            "warmup_frac": 0.09345855187141563,
+            "min_stage_steps": 20
+          },
+          "val_loss": 6.558808295812219,
+          "val_ppl": 705.4305289690544,
+          "probe_steps": 27
+        }
+      ],
+      "accepted": false,
+      "selected": "incumbent",
+      "selected_val_loss": 6.558808295812219
+    }
+  ],
+  "extra": {
+    "driver_wall_s": 716.7321488857269
+  }
+}

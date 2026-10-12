@@ -1,0 +1,32 @@
+{
+  "condition": "adamw",
+  "seed": 0,
+  "params": 10000000,
+  "test_acc": 0.9769,
+  "test_f1": 0.976738452911377,
+  "test_nll": 0.10052226600646973,
+  "val_acc": 0.9733,
+  "val_f1": 0.9731547236442566,
+  "final_train_acc": 0.9936,
+  "grad_evals": 3000,
+  "probe_grad_evals": 0,
+  "examples_seen": 384000,
+  "wall_s": 76.81346035003662,
+  "peak_mem_mb": 730.41015625,
+  "retention": 0.995,
+  "forgetting": 0.0050000000000000044,
+  "stage_log": [
+    {
+      "stage": "ADAMW",
+      "step": 0,
+      "grad_evals": 0,
+      "examples_seen": 0,
+      "train_loss": NaN,
+      "train_err": NaN,
+      "retention": 0.061,
+      "note": "baseline"
+    }
+  ],
+  "generations": [],
+  "extra": {}
+}

@@ -1,0 +1,73 @@
+{
+  "condition": "hlc_fixed",
+  "seed": 2,
+  "params": 10000000,
+  "config": {
+    "vocab": 7618,
+    "d": 320,
+    "n_layers": 6,
+    "ffn": 1280,
+    "n_heads": 5,
+    "pos_max": 512,
+    "tie": true
+  },
+  "test_loss": 7.12651007331812,
+  "test_ppl": 1244.5260744279326,
+  "val_loss": 7.0609122569154215,
+  "val_ppl": 1165.507923608299,
+  "train_loss_final": 6.9475141048431395,
+  "retention_ppl": 958.7706848645071,
+  "retention_loss": 6.865651927274816,
+  "steps": 600,
+  "probe_steps": 0,
+  "probe_tokens": 0,
+  "tokens_seen": 2457600,
+  "wall_s": 418.10826420783997,
+  "peak_mem_mb": 1710.87890625,
+  "stage_log": [
+    {
+      "stage": "BIRTH",
+      "step": 0,
+      "tokens": 0,
+      "train_loss": NaN,
+      "retention_loss": 208.05973307291666,
+      "note": "fixed schedule budget=82"
+    },
+    {
+      "stage": "GROWTH",
+      "step": 82,
+      "tokens": 335872,
+      "train_loss": 17.830684248606364,
+      "retention_loss": 15.994689223345588,
+      "note": "fixed schedule budget=126"
+    },
+    {
+      "stage": "EXPLORATION",
+      "step": 208,
+      "tokens": 851968,
+      "train_loss": 9.681672191619873,
+      "retention_loss": 9.70638152477788,
+      "note": "fixed schedule budget=140"
+    },
+    {
+      "stage": "REFLECTION",
+      "step": 348,
+      "tokens": 1425408,
+      "train_loss": 7.6859712918599445,
+      "retention_loss": 7.517704024969363,
+      "note": "fixed schedule budget=126"
+    },
+    {
+      "stage": "CONSOLIDATION",
+      "step": 474,
+      "tokens": 1941504,
+      "train_loss": 7.007382440567016,
+      "retention_loss": 6.954516242532169,
+      "note": "fixed schedule budget=126"
+    }
+  ],
+  "generations": [],
+  "extra": {
+    "driver_wall_s": 433.46408700942993
+  }
+}

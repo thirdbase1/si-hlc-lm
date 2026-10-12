@@ -1,0 +1,35 @@
+{
+  "dataset": "DailyDialog (Li et al., IJCNLP 2017)",
+  "source_repo": "OpenRL/daily_dialog (HF parquet mirror of the original ijcnlp_dailydialog release)",
+  "original_url": "http://yanran.li/files/ijcnlp_dailydialog.zip (dead)",
+  "license": "CC-BY-NC-SA-4.0 (non-commercial research use)",
+  "tokenizer": "byte-level BPE (HuggingFace tokenizers), trained on the TRAINING SPLIT ONLY",
+  "vocab_size": 7618,
+  "seq_len": 256,
+  "doc_sep_id": 0,
+  "pad_id": 1,
+  "formatting": "alternating 'User:' / 'Bot:' turns, one dialogue per line-block, '<|doc|>' between dialogues",
+  "splits": {
+    "train": {
+      "dialogues": 11118,
+      "blocks": 6109,
+      "tokens_packed": 1563904,
+      "tokens_dropped": 174,
+      "md5_blocks": "ad0d5eb7b5bb86961fc653e4681edbe3"
+    },
+    "validation": {
+      "dialogues": 1000,
+      "blocks": 563,
+      "tokens_packed": 144128,
+      "tokens_dropped": 213,
+      "md5_blocks": "b48b6d9934d2c79eebc5acafe7f67406"
+    },
+    "test": {
+      "dialogues": 1000,
+      "blocks": 551,
+      "tokens_packed": 141056,
+      "tokens_dropped": 17,
+      "md5_blocks": "1d1ceee04168100fcb858cca768886ce"
+    }
+  }
+}

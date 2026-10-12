@@ -1,0 +1,22 @@
+# checkpoints are published as GitHub release assets, never committed
+*.pt
+*.pth
+*.ckpt
+
+# datasets (download scripts are in the subdirs)
+lmdata/
+data/
+*.parquet
+*.gz
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# run artifacts
+nohup.out
+*.log
+.DS_Store

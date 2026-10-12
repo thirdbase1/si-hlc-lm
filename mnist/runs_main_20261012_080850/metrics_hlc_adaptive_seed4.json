@@ -1,0 +1,82 @@
+{
+  "condition": "hlc_adaptive",
+  "seed": 4,
+  "params": 10000000,
+  "test_acc": 0.9782,
+  "test_f1": 0.9780073165893555,
+  "test_nll": 0.10913647193908692,
+  "val_acc": 0.9753,
+  "val_f1": 0.9750069379806519,
+  "final_train_acc": 0.9921,
+  "grad_evals": 3000,
+  "probe_grad_evals": 0,
+  "examples_seen": 384000,
+  "wall_s": 77.23873448371887,
+  "peak_mem_mb": 1507.6796875,
+  "retention": 0.993,
+  "forgetting": 0.007000000000000006,
+  "stage_log": [
+    {
+      "stage": "BIRTH",
+      "step": 0,
+      "grad_evals": 0,
+      "examples_seen": 0,
+      "train_loss": NaN,
+      "train_err": NaN,
+      "retention": 0.098,
+      "note": "gen=0 want=375"
+    },
+    {
+      "stage": "GROWTH",
+      "step": 26,
+      "grad_evals": 26,
+      "examples_seen": 3328,
+      "train_loss": 0.5121519064100889,
+      "train_err": 0.14933894230769232,
+      "retention": 0.4995,
+      "note": "gen=0 want=974"
+    },
+    {
+      "stage": "EXPLORATION",
+      "step": 75,
+      "grad_evals": 75,
+      "examples_seen": 9600,
+      "train_loss": 0.8437977117300034,
+      "train_err": 0.22546875,
+      "retention": 0.9175,
+      "note": "gen=0 want=1675"
+    },
+    {
+      "stage": "REFLECTION",
+      "step": 233,
+      "grad_evals": 233,
+      "examples_seen": 29824,
+      "train_loss": 0.17057142369449138,
+      "train_err": 0.04796875,
+      "retention": 0.96,
+      "note": "gen=0 want=2142"
+    },
+    {
+      "stage": "CONSOLIDATION",
+      "step": 259,
+      "grad_evals": 259,
+      "examples_seen": 33152,
+      "train_loss": 0.19270191438496112,
+      "train_err": 0.05625,
+      "retention": 0.958,
+      "note": "gen=0 want=2741"
+    },
+    {
+      "stage": "RENEWAL",
+      "step": 3000,
+      "grad_evals": 3000,
+      "examples_seen": 384000,
+      "train_loss": 0.02205837300803978,
+      "train_err": 0.0071875,
+      "retention": 0.993,
+      "note": "gen=0 stagnation=0.47194"
+    }
+  ],
+  "generations": [],
+  "extra": {}
+}
